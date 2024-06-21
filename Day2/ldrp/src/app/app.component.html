@@ -1,0 +1,17 @@
+<h1>Namaste</h1>
+ <h1>{{title}}</h1>  <!--  interpolation -->
+ <button (click)="onClick()">Click me!</button>   <!--  Event Binding -->
+ <img [src]="imageURL">      <!--  Property Binding -->
+
+  <!--  Directives -->
+ <p *ngIf="isVisible">This text is Visible.</p>
+
+ <ul>
+  <li *ngFor="let item of items">{{item}}</li>
+ </ul>
+
+ <!-- Two Way Binding -->
+ <input [(ngModel)]="myName">
+ <p>Hello, {{myName}}</p>
+ 
+ <router-outlet />
